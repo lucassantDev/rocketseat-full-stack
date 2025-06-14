@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    
+}
+
+.medida-local{
+    border: 1px solid red;
+
+}
+
+.propriedades-imagem{
+    border-radius: 28px;
+    scale: 0.9;
+    border: 1px solid red;
+}
