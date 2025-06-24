@@ -16,7 +16,6 @@ nav ul{
     gap: 20px;
 }
 
-
 nav > ul > li:last-child  img{
     width: 40px;
     height: 40px;
