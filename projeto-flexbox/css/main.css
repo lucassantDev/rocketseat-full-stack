@@ -1,53 +1,3 @@
-@import url(global.css);
-header{
-    height: 400px;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-}
-
-#perfil{
-    width: 50%;
-    height: 400px;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-
-#info-isabela{
-    width: 50%;
-    height: 100px;
-    /* border: 1px solid red; */
-}
-
-#local-viagens-fotos{
-    margin: 0 0 0 200px;
-    width: 280px;
-    height: 104px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    /* border: 1px solid red; */
-}
-
-.icone-informacao{
-    display: flex;
-    align-items: center;
-    /* border: 1px solid red; */
-}
-
-.icone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.informacao{
-    font-size: 14px;
-    margin: 0 0 0 8px;
-}
 
 #fotografias{
     width: 100%;
@@ -126,20 +76,4 @@ main div{
     background-image: url(../assets/img/Image\ 12.png);
 }
 
-footer{
-    width: 100%;
-    height: 72px;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-
-footer ul{
-    width: 297px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-}

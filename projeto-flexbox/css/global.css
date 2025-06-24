@@ -10,19 +10,19 @@
     --skeleton-color: #d9d9d9;
     --shape-transparency: #ffffff8f;
     --text-color-primary: #313131;
-    --text-colorsecondary: #6c6c6c;
+    --text-color-secondary: #6c6c6c;
 
     /* fonte */
-    --font-family: 'Poppins', 'sans-serif';
+    --font-family: 'Arial', 'sans-serif';
     --text-lg: bold 32px/125% var(--font-family);
     --text: 16px/1.5% var(--font-family);
-    --text-md: 14px/175% var(--font-family);
+    --text-md: 14px/170% var(--font-family);
     --text-sm: 12px/175% var(--font-family);
     
 }
 
 body{
-    /* font: var(--text); */
+    font: var(--text);
 }
 
 a{
