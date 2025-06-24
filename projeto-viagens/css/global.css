@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+    --font-family:'Open Sans', 'Arial', 'sans-serif';
+    --fonte-h1:'Open Sans', Bold, 36px, var(--font-family);
+    --fonte-h2:'Open Sans', Bold, 32px, var(--font-family);
+    --fonte-h3:'Open Sans', Bold, 28px, var(--font-family);
+    --fonte-headline:'Open Sans', Bold, 16px, var(--font-family);
+    --fonte-p:'Open Sans', normal, 16px, var(--font-family);
+    --fonte-subtitulo:'Open Sans', Bold, 16px, var(--font-family);
+
+    --cor00: #1b1b1b;
+    --cor01: #333333;
+    --cor02: #696969;
+    --cor02: #e1624f;
+    --corTitulos: #e95e10;
+    --corLista-1: #0c51a7;
+    --corLista-2: #e5245e;
+    --corLista-3: #591b98;
+
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.medida-local{
+    border: 1px solid red;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+}
+
+.texto-laranja{
+    font-family: var(--fonte-headline);
+    color: var(--corTitulos);
+}

@@ -1,0 +1,11 @@
+#secao-01 p{
+    font-family: var(--fonte-subtitulo);
+    text-align: center;
+    border: 1px solid red;
+}
+
+#secao-01 img{
+    border-radius: 28px;
+    width: 1200px;
+    object-fit: cover;
+}
