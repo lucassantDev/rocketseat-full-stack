@@ -7,6 +7,9 @@ const form = document.querySelector('form');
 const currency = document.getElementById('currency');
 const amountHTML = document.getElementById('amount');
 const footer = document.querySelector("main footer");
+const footerDescricao = document.getElementById('description');
+const resultado = document.getElementById('result')
+
 
 // ° Recuperando valor do input amount, aceitando apenas números  e removendo letras
 amountHTML.addEventListener('input', ()=> {
@@ -30,15 +33,32 @@ form.onsubmit = (event) => {
     }
 }
 
+
 // funcao para identificar a moeda 
 function convertendoMoeda(amount, preco, simbolo){
 try{
-    // exibindo o footer na tela
-    footer.classList.add('show-result')
+    footerDescricao.textContent = `${simbolo} 1 = ${formatandoMoeda(preco)}`; // alterando conteudo de texto
+
+    // utilizando a propriedade replace para trocar o ponto pela virgula
+    let total = String(amount * preco).replace('.', ',');
+
+    // exibe o resultado total formatado
+    resultado.textContent = `R$ ${total} Reais`;
+
+    footer.classList.add('show-result');  // exibindo o footer na tela
+
 }catch(error){
     console.log(error)
     // removendo o footer na tela
     footer.classList.remove('show-result')
     console.log("Não foi possível converter. Tente novamente mais tarde.")
 }
+}
+
+// função para formatar moeda em real brasileiro
+function formatandoMoeda(valor){
+    return Number(valor).toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+    })
 }
