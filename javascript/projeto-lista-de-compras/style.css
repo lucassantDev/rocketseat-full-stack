@@ -34,30 +34,44 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
 
 main{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 90vh;
 }
 
 #secao-01{
     width: 60%;
     height: 100px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+#opcao-voltar{
+    display: flex;
+    width: 140px;
+    color: var(--color-brand);
+    margin: 0 0 0 140px;
+
+}
+
+#opcao-voltar span{
+    font-weight: bolder;
+    margin: 0 0 0 10px;
+    }
+
+#titulo-compras{
+    margin: 10px 0 0 140px;
+}
+
 #secao-02{
     width: 60%;
     height: 100px;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +82,7 @@ main{
     height: 44px;
     padding-inline: 5px;
     border-radius: 10px;
-    border: 1px solid var(--border-primary);
+    border: 3px solid var(--border-primary);
 }
 
 #novo-item:focus{
@@ -80,6 +94,8 @@ main{
     height: 44px;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Inter';
     background-color: var(--color-brand);
     color: var(--always-white);
 }
@@ -87,13 +103,11 @@ main{
 #secao-03{
     width: 60%;
     height: fit-content;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .item-informado{
-    border: 1px  solid red;
     display: flex;
     align-items: center;
     width: 627px;
@@ -102,6 +116,78 @@ main{
     background-color: var(--background-secondary) ;
 }
 
+.item-informado input{
+    margin: 0 0 0 10px;
+}
+.item-informado p {
+    margin: 0 0 0 30px;
+}
+
+.item-informado span{
+    margin: 0 0 0 100px;
+}
+
 .remover-item{
     cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    header{
+        display: none;
+    }
+
+    main{
+        height: fit-content;
+    }
+
+    #secao-01{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    #opcao-voltar{
+        margin: 0;
+    }
+
+    #opcao-voltar{
+        margin: 0;
+        margin: 10px 0 0 25px;
+        font-size: 1.2rem;
+    }
+
+    #titulo-compras{
+        margin: 10px 0 0 25px;
+        font-size: 1.4rem;
+    }
+
+    #secao-02{
+        width: 100%;
+        height: 225px;
+        flex-direction: column;
+    }
+
+    #novo-item{
+        margin: 0 0 0 20px;
+    }
+
+    #adicionar-item{
+        width: 465px;
+        height: 48px;
+        font-weight: bold;
+        margin: 10px 0 0 20px;
+    }
+
+   #secao-03{
+        width: 100%;
+        /* display: none; */
+   }
+
+   .item-informado{
+        width: 350px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--content-secondary);
+   }
+
+    
 }
