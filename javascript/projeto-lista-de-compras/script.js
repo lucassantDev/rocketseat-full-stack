@@ -27,8 +27,13 @@ botaoNovoItem.addEventListener('click', (event) => {
 
         // criando o paragráfo, o checkbox e o icone de lixeira
         let paragrafo = document.createElement('p');
+        // paragrafo.classList.add('')
         let checkboxHTML = document.createElement('input');
         checkboxHTML.setAttribute('type', 'checkbox'); // adicionando atributos para o input
+
+        let centralizarSpan = document.createElement('div');
+        centralizarSpan.classList.add('centralizar-icone');
+
         let spanIconeLixeira = document.createElement('span');
 
         // informando o item informado, criando um texto e armazenando na variavel valorItem
@@ -38,13 +43,14 @@ botaoNovoItem.addEventListener('click', (event) => {
         // adicionando o elemento filho no elemento pai
         paragrafo.appendChild(valorItem);
         spanIconeLixeira.appendChild(iconeLixeira);
-        spanIconeLixeira.classList.add('remover-item')
+        spanIconeLixeira.classList.add('remover-item');
+
+        centralizarSpan.appendChild(spanIconeLixeira);
+        
 
         espacoItem.appendChild(checkboxHTML)
         espacoItem.appendChild(paragrafo);
-        espacoItem.appendChild(spanIconeLixeira)
-
-        console.log(espacoItem)
+        espacoItem.appendChild(centralizarSpan);
 
         // adicionando o estilo na div criada
         espacoItem.classList.add('item-informado')
@@ -52,9 +58,11 @@ botaoNovoItem.addEventListener('click', (event) => {
         // adicionando a div no html!!!!
         secaoItens.appendChild(espacoItem);
         limparCampo(item);
-    }
 
-    spanIconeLixeira.addEventListener('click', () => {
+        spanIconeLixeira.addEventListener('click', () => {
         removendoItemEscolhido(espacoItem);
     })
+    }
+
+    
 })
