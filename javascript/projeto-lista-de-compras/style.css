@@ -108,31 +108,37 @@ main{
     flex-direction: column;
 }
 
-.centralizar-icone{
-    width: 40%;
-    height: fit-content;
-    display: flex;
-    align-items: end;
-}
+
 .item-informado{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 627px;
     height: 49px;
     margin: 10px 0 10px 0;
     background-color: var(--background-secondary) ;
 }
 
+.centralizar-icone{
+    width: 40%;
+    margin: 0 10px 0 0px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid red;
+}
+
 .item-informado input{
     margin: 0 0 0 10px;
 }
 .item-informado p {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 -30px;
+    text-align: left;
+    border: 1px solid red;
+    width: 250px;
 }
 
-.item-informado span{
-    margin: 0 0 0 100px;
-}
 
 .remover-item{
     cursor: pointer;
