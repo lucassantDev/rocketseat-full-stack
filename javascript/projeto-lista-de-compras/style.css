@@ -126,19 +126,17 @@ main{
     display: flex;
     align-items: center;
     justify-content: end;
-    border: 1px solid red;
 }
 
 .item-informado input{
     margin: 0 0 0 10px;
 }
+
 .item-informado p {
     margin: 0 0 0 -30px;
     text-align: left;
-    border: 1px solid red;
     width: 250px;
 }
-
 
 .remover-item{
     cursor: pointer;
@@ -201,6 +199,5 @@ main{
         font-weight: bold;
         color: var(--content-secondary);
    }
-
-    
+   
 }
