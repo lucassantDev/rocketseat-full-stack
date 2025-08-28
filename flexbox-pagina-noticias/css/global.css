@@ -38,16 +38,27 @@ h1, h2, h3{
    font: inherit;
 }
 
-.grid{
-    display: grid;
-}
-
-.grid-flow-col{
-    grid-auto-flow: column;
-}
-
 .container{
     max-width: 1280px;
     padding-inline: 32px;
     margin-inline: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    margin-top: 40px;
+}
+
+.content-tag{
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font: 500 10px/1.2 var(--fontePrincipal);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-color-primary);
 }
