@@ -52,3 +52,17 @@ input[type='date']{
 select{
     background: url(../../img/arrow-down-01.svg) no-repeat 95%;
 }
+
+.address .flex{
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]){
+    opacity: .5;
+}
+
+input{
+    &[disabled]{
+        background-color: #e7e5e4;
+    }
+}
