@@ -1,6 +1,7 @@
 #secao-01 p{
     font-family: var(--fonte-subtitulo);
     text-align: center;
+    text: italic;
     border: 1px solid red;
 }
 
