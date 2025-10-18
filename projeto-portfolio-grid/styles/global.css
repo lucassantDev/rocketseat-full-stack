@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /* cores */
+    --colorRed: #E3646E;
+    --colorPurple: #BB72E9;
+    --colorBlue: #3996DB;
+    --colorGreen: #82BC4F;
+    --colorYellow: #EABD5F;
+
+    /* base */
+    --colorGray-100: #E2E4E9;
+    --colorGray-200: #C0C4CE;
+    --colorGray-300: #878EA1;
+    --colorGray-400: #292C34;
+    --colorGray-500: #16181D;
+    --colorGray-600: #0D0E11
+
+}
+
+section{
+    border: 1px solid red;
+    height: 100vh;
+}
