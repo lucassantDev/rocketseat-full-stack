@@ -1,3 +1,33 @@
 #section-projects{
     background-color: var(--colorGray-500);
 }
+
+#projects-grid{
+    width: 90%;
+    padding-block: 10px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 0.6fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.project{
+    height: 250px;
+    border: 1px solid blue;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.img-project{
+    width: 90%;
+    height: 60%;
+    border: 1px solid red;
+    border-radius: 12px;
+
+}

@@ -1,6 +1,10 @@
 #section-contact{
     background-image: url(../images/Background_Contacts.png);
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column ;
 
     & i{
         font-size: 1rem;
@@ -23,16 +27,18 @@
     background-color: goldenrod;
     width: 40%;
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     height: fit-content;
 
     & .contact{
-        /* display: flex;
-        border: 1px solid red;
-        align-items: center;
-        justify-content: space-evenly; */
         display: grid;
         grid-template-rows: auto;
     }
+    
+}
+
+.contact{
+    width: 80%;
+    border: 1px solid red;
+    display: flex;
     
 }

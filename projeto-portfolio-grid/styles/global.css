@@ -21,10 +21,18 @@
 
 }
 
+main{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
 section{
     border: 1px solid red;
     height: 100vh;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .title-section{

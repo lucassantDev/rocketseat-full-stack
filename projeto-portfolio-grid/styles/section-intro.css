@@ -45,12 +45,12 @@
     width: 80%;
     height: fit-content;
     border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    justify-content: space-evenly;
      
     & .skill{
         border: 1px solid red;
-        width: 110px;
+        width: 120px;
         height: 50px;
         display: flex;
         align-items: center;
@@ -61,6 +61,12 @@
     }
 
     img{
-        scale: 0.8;
+        scale: 0.9;
     }
+
+}
+
+#seta-intro{
+    font-size:2rem ;
+    color: var(--colorGray-100);
 }
