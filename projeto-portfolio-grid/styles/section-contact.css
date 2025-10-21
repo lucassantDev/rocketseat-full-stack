@@ -1,4 +1,38 @@
 #section-contact{
     background-image: url(../images/Background_Contacts.png);
     background-size: cover;
+
+    & i{
+        font-size: 1rem;
+        color: var(--colorGray-200);
+    }
+}
+
+.title-section{
+
+    & p{
+        color: var(--colorGray-200);
+    }
+
+    h4{
+        color: var(--colorPurple);
+    }
+}
+
+#contacts{
+    background-color: goldenrod;
+    width: 40%;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    height: fit-content;
+
+    & .contact{
+        /* display: flex;
+        border: 1px solid red;
+        align-items: center;
+        justify-content: space-evenly; */
+        display: grid;
+        grid-template-rows: auto;
+    }
+    
 }
